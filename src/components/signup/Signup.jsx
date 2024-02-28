@@ -8,12 +8,12 @@ const Signup = () => {
   const [password, setPassword] = useState("");
 
   const changeHandler = (e, setter, state) => {
-    setUsername(e.target.value);
-    console.log(username);
+    setter(e.target.value);
+    console.log(state);
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); //stops page refresh
     console.log("Hello from signup handleSubmit");
     await signup(username, email, password);
   }
