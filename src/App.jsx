@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import LogOrSign from './components/logOrSign/LogOrSign'
 
 function App() {
 
   return (
-    <div>
-      <p>hello world</p>
+    <div className='wrapper'>
+      <LogOrSign/>
     </div>
   )
 }
